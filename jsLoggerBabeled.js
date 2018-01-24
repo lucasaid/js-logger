@@ -25,7 +25,7 @@ var Logger = function Logger() {
 
   this.showAll = function () {
     var showAllDialog = document.createElement("div");
-    showAllDialog.style.cssText = 'padding:10px;position:absolute;width:30vw;height:40vh;z-index:100; opacity:1;background:#000; color: #fff; top:50%; left:50%; transform: translate(-50%, -50%); overflow: scroll;';
+    showAllDialog.style.cssText = 'box-sizing: border-box;padding:10px;position:absolute;width:30vw;height:40vh;z-index:100; opacity:1;background:#000; color: #fff; top:50%; left:50%; transform: translate(-50%, -50%); overflow: scroll;';
     _this.showAllDialog = showAllDialog;
     _this.messageHistory.forEach(function (message) {
       _this.showAllDialog.innerHTML += message + "<br />";
@@ -37,8 +37,8 @@ var Logger = function Logger() {
   var loggerBg = document.createElement('div');
   this.showAllDialog = "";
   this.messageHistory = [];
-  loggerBg.style.cssText = 'padding:10px;position:absolute;width:100%;height:20px;z-index:99; opacity:0.5;background:#000; color: #fff; bottom:0; left:0;';
-  logger.style.cssText = 'padding:10px;position:absolute;width:100%;height:20px;z-index:100; color: #fff; bottom:0; left:0;';
+  loggerBg.style.cssText = 'box-sizing: border-box;padding:10px;position:absolute;width:100%;height:20px;z-index:99; opacity:0.5;background:#000; color: #fff; bottom:0; left:0;';
+  logger.style.cssText = 'box-sizing: border-box;padding:10px;position:absolute;width:100%;height:20px;z-index:100; color: #fff; bottom:0; left:0;';
   this.logger = logger;
   this.loggerBg = loggerBg;
   this.logger.addEventListener("click", function () {
