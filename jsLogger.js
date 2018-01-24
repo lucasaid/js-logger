@@ -1,4 +1,4 @@
-class Logger {
+export default class Logger {
   constructor() {
     let logger = document.createElement('div');
     let loggerBg = document.createElement('div');
